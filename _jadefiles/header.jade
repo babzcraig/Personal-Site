@@ -1,13 +1,24 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    li: a(href="#youtube") YouTube
+    li: a(href="#articles") Articles
+    li: a(href="#work") Work
+    li: a(href="#contact") Contact
+
+.mobile-nav
+  +nav-content
+
+
 header
   .header-position
     h1.logo Babs Craig
     
     nav.site-nav
-      ul
-        li: a(href="#about") About
-        li: a(href="#youtube") YouTube
-        li: a(href="#articles") Articles
-        li: a(href="#work") Work
-        li: a(href="#contact") Contact
+      +nav-content()
     
     a(href="mailto:babscraig@gmail.com").email-link +email me
+    
+    
+    .mobile-nav-toggle
+      span

@@ -2,15 +2,21 @@
 layout: default
 title: Your New Jekyll Site
 ---
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../assets/js/functions.js">
 
+</script>
 <div class="home-wrap">
 
   {% include header.html %}
 
   <div class="home-sections">
 
-    <!-- all the sections go here -->
-    <div style="height: 2000px"></div>
+    {% include section-about.html %}
+    {% include section-youtube.html %}
+    {% include section-articles.html %}
+    {% include section-design.html %}
+    {% include section-footer.html %}
 
   </div>
 
